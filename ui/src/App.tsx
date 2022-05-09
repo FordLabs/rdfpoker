@@ -16,15 +16,9 @@
 
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import axios from 'axios';
 import AppRoutes from './AppRoutes';
 
 function App() {
-    const isLocalHost = window.location.origin.includes('localhost');
-    if (isLocalHost) {
-        axios.defaults.baseURL = window.location.origin.replace('3000', '8080');
-    }
-
     return (
         <BrowserRouter>
             <AppRoutes />
