@@ -1,0 +1,11 @@
+public/**/*
+build/**/*
+api/dist
+dist/
+node_modules/*
+package-lock.json
+package.json
+*.md
+*.json
+coverage/**/*
+manifest*.yml

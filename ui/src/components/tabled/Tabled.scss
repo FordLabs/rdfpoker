@@ -1,0 +1,19 @@
+.tabled {
+    margin: 0 0.625rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    height: 100%;
+
+    .tabledCard {
+        display: flex;
+        flex-direction: row;
+
+        .pokerChip {
+            margin-left: 0.5rem;
+        }
+    }
+}

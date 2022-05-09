@@ -1,0 +1,50 @@
+@use '../../styles/breakpoints';
+
+.textEntry {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+
+    input[type='text'] {
+        height: 3rem;
+        padding: 0.75rem 1.25rem;
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        border: 1px solid #555555;
+        font-size: unset;
+        width: 80%;
+        margin-top: 0.625rem;
+    }
+
+    @include breakpoints.medium {
+        flex-direction: row;
+        width: 80%;
+
+        input[type='text'] {
+            width: 65%;
+            margin-top: unset;
+        }
+
+        label {
+            width: 20%;
+        }
+    }
+
+    @include breakpoints.xlarge {
+        input[type='text'] {
+            width: 80%;
+        }
+    }
+
+    input[type='text']:focus {
+        border: 2px solid #555555;
+        background-color: white;
+    }
+}
+
+.notFoundError {
+    color: red;
+    margin: 0.3125rem 0;
+}

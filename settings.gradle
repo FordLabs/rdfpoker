@@ -1,0 +1,2 @@
+rootProject.name = 'rdfpoker'
+include("api", "ui")

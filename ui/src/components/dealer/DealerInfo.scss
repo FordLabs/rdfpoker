@@ -1,0 +1,80 @@
+@use '../../styles/breakpoints';
+
+.dealer {
+    background-image: url('../../images/Dealer.png');
+    background-position: top;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+
+    .dealerElement {
+        display: flex;
+        margin: 0.625rem;
+        flex-direction: column;
+
+        @include breakpoints.medium {
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .textEntry {
+            label {
+                background-color: white;
+                padding: 0.625rem;
+            }
+        }
+    }
+
+    .phase {
+        .phaseDropDown {
+            label {
+                flex: 4;
+            }
+        }
+
+        > div > div {
+            flex: 6;
+        }
+    }
+
+    .rules {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .dealerElement {
+            flex-direction: column;
+
+            .textEntry {
+                width: 100%;
+            }
+        }
+
+        .smallNumberRule {
+            .textEntry {
+                input[type='text'] {
+                    max-width: 4.5rem;
+                }
+            }
+        }
+
+        button {
+            margin-right: 0.625rem;
+        }
+    }
+
+    button {
+        align-self: flex-end;
+        margin-left: 0.625rem;
+    }
+
+    .separator {
+        align-self: center;
+    }
+
+    .notFoundError {
+        background-color: white;
+        padding: 0.625rem;
+    }
+}

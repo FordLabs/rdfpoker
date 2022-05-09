@@ -1,0 +1,8 @@
+plugins {
+  id 'com.github.node-gradle.node' version '3.2.1'
+}
+
+node {
+  download = true
+  version = "14.15.0"
+}

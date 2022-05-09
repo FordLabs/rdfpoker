@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "viewportHeight": 768,
+  "viewportWidth": 1366,
+  "videoUploadOnPasses": false,
+  "reporting:": "junit",
+  "snapshotFileName" : "cypress/snapshots.js"
+}

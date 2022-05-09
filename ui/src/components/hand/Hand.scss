@@ -1,0 +1,61 @@
+.hand {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+        .deck {
+            background-position: center;
+            margin-top: 0.625rem;
+        }
+
+        .cardArea {
+            width: 100%;
+            max-width: 75rem;
+            padding-top: 0.625rem;
+
+            .cardsInHand {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: 100%;
+
+                .cardPlaceholder {
+                    border: 2px solid #ffff00;
+                }
+            }
+        }
+    }
+}
+
+.cardTemplate {
+    border-radius: 1rem;
+    padding: 1.25rem;
+    min-width: 9rem;
+    width: 9rem;
+    min-height: 14rem;
+    height: 11rem;
+    box-sizing: border-box;
+}
+
+.full {
+    background-image: url('../../images/LabsLogo.png');
+    border: 2px solid royalblue;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: steelblue;
+}
+
+.empty {
+    background: gray;
+    opacity: 0.7;
+    border: 2px solid gray;
+    cursor: not-allowed;
+}

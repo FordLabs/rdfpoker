@@ -1,0 +1,29 @@
+.playerPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .pokerTable {
+        padding: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        height: calc(100% - 2.5rem);
+        box-sizing: border-box;
+        gap: 1rem;
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+
+            .timerArea {
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+        }
+    }
+}
