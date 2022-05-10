@@ -17,19 +17,16 @@ jobs:
         with:
           java-version: '11.x'
       - name: Test
-        run: ./gradlew clean test
-        working-directory: ./api
+        run: ./gradlew api:check
       - name: Build PR
-        run: ./gradlew assemble
+        run: ./gradlew api:assemble
         env:
           HEAD_BRANCH: ${{ github.head_ref }}
-        working-directory: ./api
         if: github.event_name == 'pull_request'
       - name: Build
-        run: ./gradlew assemble
+        run: ./gradlew api:assemble
         env:
           HEAD_BRANCH: main
-        working-directory: ./api
         if: github.event_name == 'push'
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.0.0
